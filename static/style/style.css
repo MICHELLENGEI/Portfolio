@@ -1,0 +1,570 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.navbar-brand {
+    padding-left: 8%;
+    font-weight: 900;
+    font-family: 'Poppins';
+    margin-top: 30px;
+}
+
+.navbar {
+    padding-top: 30px;
+    background: #000;
+}
+
+.navbar-nav .nav-item .nav-link {
+    /* color: #333;  */
+    color: #ffc017;
+    padding-left: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:active .nav-link {
+    background-color: #ffc017;
+    color: #fff;
+
+}
+
+.carousel {
+    background: #000;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item .carousel-caption {
+    left: 0;
+    text-align: left;
+    top: 10%;
+    transform: translateX(10%);
+    position: absolute;
+}
+
+.carousel-caption h1 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.carousel-caption h2 {
+    font-family: "Poppins";
+    padding-bottom: 15px;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.carousel-caption p {
+    padding-bottom: 10px;
+}
+
+.carousel-item img {
+    max-width: 35%;
+    height: auto;
+    margin-left: 55%;
+
+}
+
+.icons a {
+    padding: 1px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #ffc017;
+}
+
+.icons i {
+    padding: 10px;
+}
+
+/* Services division */
+.servicescards {
+    background: #000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.servicescards .card {
+    border: none;
+}
+
+.servicescards .card-body {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+
+}
+
+.servicescards .card .card-body p {
+    text-align: center;
+    color: #fff;
+}
+
+.servicescards .card-body a button {
+    background: #ffc017;
+    border-radius: 8px;
+    height: 40px;
+    width: 160px;
+    border-color: transparent;
+    color: #00000073;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.servicescards .card-body a button:hover {
+    background: #fff;
+    color: #000;
+
+}
+
+.servicescards .card-body a {
+    padding-top: 10px;
+}
+
+.servicescards .card-body h5 {
+    color: #ffc017;
+    padding: 10px
+}
+
+.servicescards h1 {
+    font-family: "Poppins";
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: #ffc017;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.quote {
+    background: #000;
+}
+
+.quote p {
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* Products division */
+.productscards {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    background: #000;
+}
+
+.productscards .card {
+    border-color: #ffc017;
+    border-radius: 8px;
+    border-width: 2px;
+
+}
+
+.productscards h1 {
+    font-family: "Poppins";
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: #ffc017;
+    text-align: center;
+    font-size: 48px;
+}
+
+.productscards p {
+    text-align: center;
+    color: #683604;
+    padding: 20px;
+}
+
+.productscards .card-body h6 {
+    font-family: "Poppins";
+    padding-bottom: 5px;
+    color: #5a2e01;
+    font-weight: 900;
+
+}
+
+.productscards .card-body {
+    background: #ffc017;
+}
+
+.productscards .card-body p {
+    font-family: "Poppins";
+    padding-bottom: 5px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.productscards .card-body p:hover {
+    color: #fff;
+}
+
+.productscards .card-body .cardicon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.productscards .card-body .cardicon i {
+    color: #683604;
+}
+
+.productscards .card-body .cardicon i:hover {
+    color: #fff;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.blogcards,
+.blogcards .card {
+    background: #000;
+
+}
+
+.blogcards h1 {
+    font-family: "Poppins";
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: #ffc017;
+    text-align: left;
+    font-size: 48px;
+}
+
+.blogcards p {
+    color: #fff;
+    text-align: left;
+}
+
+.wrapperContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-bottom: 150px;
+}
+
+.wrapper .card {
+    border: none;
+}
+
+.wrapper img {
+    max-width: 100%;
+    height: 300px;
+    border-color: #ffc107;
+    border-radius: 4px;
+}
+
+.text-box {
+    color: #fff;
+}
+
+.blogicon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.blogicon i:hover {
+    color: #ffc017;
+}
+
+/* freelance */
+.freelance {
+    width: 100%;
+    /* Or set the desired width */
+    height: 450px;
+    /* Or set the desired height */
+    background-image: url('../img/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
+    /* Replace 'path/to/your/image.jpg' with your image file path */
+    background-size: cover;
+    /* This will make the image cover the entire division */
+    background-position: center;
+    /* This will center the image */
+
+}
+
+.freelance h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    padding-top: 70px;
+}
+
+.freelance a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.freelance button {
+    margin-top: 40px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+}
+
+.freelance .card-row {
+    display: flex;
+    justify-content: center;
+    /* Adjust spacing between cards */
+}
+
+.freelance .card-row .card {
+    background-color: #33333357;
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.card-section {
+    position: relative;
+    top: -75px;
+    /* Adjust this value to position it halfway on top */
+    padding: 20px;
+    /* Optional: Add padding for spacing */
+    z-index: 1;
+    /* Ensure the cards appear above the blog content */
+}
+
+.freelance .card-row .card h3 {
+    padding-top: 5px;
+    text-align: center;
+    color: #ffc017;
+    font-weight: 500;
+}
+
+.freelance .card-row .card h4 {
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* contact div */
+.contact {
+    background: #000;
+}
+
+.contact h1 {
+    font-family: "Poppins";
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: #ffc017;
+    text-align: center;
+    font-size: 48px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container.column {
+    margin: 20px;
+    box-shadow: 0 2px 4px 0 #fff;
+    padding: 20px;
+
+}
+
+.flex-container .left,
+.flex-container .right {
+    background-color: #000
+}
+
+.flex-container .left img {
+    width: 360px;
+    height: 300px;
+    align-items: center;
+    padding: 20px;
+}
+
+.flex-container .left h3,
+.flex-container .left h5,
+.flex-container .left p {
+    color: #fff;
+
+}
+
+
+/* form styling */
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.inputBox span {
+    color: #ffc107;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    background-color: #3333337c;
+    border-radius: 2px;
+    color: #fff;
+
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+    background-color: #3333337c;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.inputBox input[type="submit"] {
+    background: black;
+    color: #fff;
+    border: 2px solid #ffc017;
+    border-radius: 10px;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox input[type="submit"]:hover {
+    background-color: #ffc017;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.findme a {
+    padding: 1px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #ffc017;
+    margin-right: 15px;
+}
+
+.findme i {
+    padding: 10px;
+
+}
+
+/* footer */
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+}
+.footer .column {
+    width: 200px;
+    height: 150px;
+    border: none;
+}
+.footer .column h4 {
+    color: #ffc017;
+}
+
+.footer .column h2 {
+    font-size: 16px;
+    color: #333;
+}
+.footer .column p {
+    color: #333;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.footer .column .fastLinks a {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.footer .column .fastLinks a:hover{
+    color: #ffc107;
+}
+
+.footer .column .getintouch a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .column .getintouch i:hover{
+    color: #ffc017;
+}
+.footer .column .getintouch a i{
+    padding-left: 10px;
+    color: #333;
+}
+.footerbottom{
+    background: #000;
+    color: #333;
+    text-align: center;
+    font-size: medium;
+    padding: 20px;
+}
