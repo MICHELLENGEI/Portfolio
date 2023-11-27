@@ -1,7 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
 .navbar-brand {
     padding-left: 8%;
     font-weight: 900;
@@ -15,7 +11,6 @@
 }
 
 .navbar-nav .nav-item .nav-link {
-    /* color: #333;  */
     color: #ffc017;
     padding-left: 20px;
     border-radius: 4px;
@@ -26,7 +21,6 @@
 .navbar-nav .nav-item:active .nav-link {
     background-color: #ffc017;
     color: #fff;
-
 }
 
 .carousel {
@@ -67,7 +61,6 @@
     max-width: 35%;
     height: auto;
     margin-left: 55%;
-
 }
 
 .icons a {
@@ -81,6 +74,87 @@
     padding: 10px;
 }
 
+/* Text Animation */
+.animate-text {
+    animation: slideFromSides 2s ease forwards;
+    opacity: 0;
+    margin-left: 8%;
+}
+
+@keyframes slideFromSides {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Image Animation */
+.animate-slide {
+    animation: slideImage 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideImage {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* carousel responsiveness */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .carousel-item .carousel-caption {
+        left: 0;
+        text-align: left;
+        top: 6%;
+        transform: translateX(10%);
+        position: absolute;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2,
+    .carousel-caption p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .icons a {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
+
+.scrolled{
+    opacity: 0;
+    animation: scroll-in 3s ease forwards;
+}
+@keyframes scroll-in {
+    0%{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
 /* Services division */
 .servicescards {
     background: #000;
@@ -100,7 +174,6 @@
     flex-direction: column;
     align-items: center;
     background: #000;
-
 }
 
 .servicescards .card .card-body p {
@@ -114,15 +187,14 @@
     height: 40px;
     width: 160px;
     border-color: transparent;
-    color: #00000073;
+    color: #fff;
     font-size: 20px;
     font-weight: 900;
 }
 
 .servicescards .card-body a button:hover {
     background: #fff;
-    color: #000;
-
+    color: #ffc017
 }
 
 .servicescards .card-body a {
@@ -143,15 +215,14 @@
     font-size: 48px;
 }
 
-
 .quote {
     background: #000;
 }
 
 .quote p {
     margin: 0;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     padding-left: 6%;
     padding-right: 6%;
     text-align: center;
@@ -175,7 +246,6 @@
     border-color: #ffc017;
     border-radius: 8px;
     border-width: 2px;
-
 }
 
 .productscards h1 {
@@ -267,26 +337,21 @@
 
 .wrapperContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 8%;
-    margin-right: 8%;
-    padding-bottom: 150px;
+   
 }
 
-.wrapper .card {
+.wrapperContainer .row .card {
     border: none;
+    margin: 20px;
 }
 
-.wrapper img {
+.wrapperContainer .row img {
     max-width: 100%;
     height: 300px;
     border-color: #ffc107;
     border-radius: 4px;
-}
-
-.text-box {
-    color: #fff;
 }
 
 .blogicon {
@@ -300,18 +365,36 @@
     color: #ffc017;
 }
 
+.wrapperContainer .row .card-body button {
+    background-color: #ffc017;
+    color: #fff;
+    border-radius: 8px;
+    width: 128px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    border-color: transparent;
+}
+
+.wrapperContainer .row .card-body button:hover {
+    color: #ffc017;
+    background: #fff;
+}
+
+/* blog responsiveness */
+@media (max-width:768px) {
+   .wrapperContainer .card{
+    margin-left: 8%;
+    margin-right:8%
+   }
+}
 /* freelance */
 .freelance {
     width: 100%;
-    /* Or set the desired width */
     height: 450px;
-    /* Or set the desired height */
     background-image: url('../img/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
-    /* Replace 'path/to/your/image.jpg' with your image file path */
     background-size: cover;
-    /* This will make the image cover the entire division */
     background-position: center;
-    /* This will center the image */
 
 }
 
@@ -343,8 +426,9 @@
 
 .freelance .card-row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    /* Adjust spacing between cards */
+    align-items: center;
 }
 
 .freelance .card-row .card {
@@ -360,11 +444,8 @@
 .card-section {
     position: relative;
     top: -75px;
-    /* Adjust this value to position it halfway on top */
     padding: 20px;
-    /* Optional: Add padding for spacing */
     z-index: 1;
-    /* Ensure the cards appear above the blog content */
 }
 
 .freelance .card-row .card h3 {
@@ -380,6 +461,31 @@
     color: #fff;
     font-weight: 500;
     font-size: 20px;
+}
+/* responsiveness */
+@media only screen and (max-width: 479px) {
+    .freelance {
+        height: 750px;
+    }
+    .freelance h1 {
+        padding-top: 50px;
+    }
+    .card-section {
+        position: relative;
+        top: 20px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+    .freelance {
+        height: 750px;
+    }
+    .freelance h1 {
+        padding-top: 50px;
+    }
+    .card-section {
+        position: relative;
+        top: 20px;
+    } 
 }
 
 /* contact div */
@@ -398,6 +504,7 @@
 
 .flex-container {
     display: flex;
+    
     flex-direction: row;
 }
 
@@ -405,7 +512,18 @@
     margin: 20px;
     box-shadow: 0 2px 4px 0 #fff;
     padding: 20px;
+}
 
+.flex-container .left {
+    width: 400px;
+    height: 650px;
+    margin-left: 8%;
+}
+
+.flex-container .right {
+    width: 700px;
+    height: 650px;
+    margin-right: 8%;
 }
 
 .flex-container .left,
@@ -424,9 +542,7 @@
 .flex-container .left h5,
 .flex-container .left p {
     color: #fff;
-
 }
-
 
 /* form styling */
 .formBox {
@@ -511,60 +627,122 @@
 
 }
 
+/* responsiveness contact */
+
+@media only screen and (min-width: 480px) and (max-width: 1023px){
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formBox .row50 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container .left {
+        margin-left: 8%;
+        margin-right: 8%;
+        width: auto;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+    
+    .flex-container .right {
+        width: auto;
+        height: 850px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .inputBox textarea {
+      width: 100%;
+     
+    }
+    .flex-container .left img {
+        width: 100%;
+    }
+}
+
 /* footer */
-.footer{
+.footer {
     background: #000;
     display: flex;
     justify-content: space-between;
     padding: 8%;
 }
+
 .footer .column {
     width: 200px;
     height: 150px;
     border: none;
 }
+
 .footer .column h4 {
     color: #ffc017;
 }
 
 .footer .column h2 {
     font-size: 16px;
-    color: #333;
+    color: #929090;
 }
+
 .footer .column p {
-    color: #333;
+    color: #929090;
     font-size: 12px;
     padding-top: 10px;
 }
 
 .footer .column .fastLinks a {
-    color: #333;
+    color: #929090;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     padding-bottom: 10px;
 }
-.footer .column .fastLinks a:hover{
+
+.footer .column .fastLinks a:hover {
     color: #ffc107;
 }
 
-.footer .column .getintouch a{
+.footer .column .getintouch a {
     text-decoration: none;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
-.footer .column .getintouch i:hover{
+
+.footer .column .getintouch i:hover {
     color: #ffc017;
 }
-.footer .column .getintouch a i{
+
+.footer .column .getintouch a i {
     padding-left: 10px;
-    color: #333;
+    color: #929090;
 }
-.footerbottom{
+
+.footerbottom {
     background: #000;
-    color: #333;
+    color: #929090;
     text-align: center;
     font-size: medium;
     padding: 20px;
 }
+
+/* footer responsiveness */
+@media only screen and (min-width: 480px) and (max-width: 1023px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+    }
+    .footer .column {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+}
+
