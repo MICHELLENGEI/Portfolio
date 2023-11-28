@@ -20,7 +20,7 @@
 .navbar-nav .nav-item:hover .nav-link,
 .navbar-nav .nav-item:active .nav-link {
     background-color: #ffc017;
-    color: #fff;
+    color: #000;
 }
 
 .carousel {
@@ -185,7 +185,7 @@
     background: #ffc017;
     border-radius: 8px;
     height: 40px;
-    width: 160px;
+    width: 16rem;
     border-color: transparent;
     color: #fff;
     font-size: 20px;
@@ -364,16 +364,25 @@
 .blogicon i:hover {
     color: #ffc017;
 }
+.wrapperContainer .row .card-body{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 5%;
+}
 
+.wrapperContainer .row .card-body h3{
+    color: #ffc017;
+}
 .wrapperContainer .row .card-body button {
     background-color: #ffc017;
     color: #fff;
     border-radius: 8px;
-    width: 128px;
     height: 40px;
+    width: 100%;
     font-family: 'Poppins';
     font-weight: 900;
     border-color: transparent;
+   
 }
 
 .wrapperContainer .row .card-body button:hover {
@@ -581,6 +590,7 @@
 
 }
 
+
 .inputBox textarea {
     padding: 10px;
     font-size: 1.1em;
@@ -612,6 +622,7 @@
 
 .formBox .row100 .inputBox {
     width: 100%;
+    
 }
 
 .findme a {
