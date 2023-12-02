@@ -14,7 +14,7 @@ To explore the portfolio:
 4. Browse through the various sections and projects showcased
 
 ## Where users can get help with your project
-If you need any assistance or have questions, feel free to [mention where users can reach out for support - e.g., create an issue on GitHub, contact via email, etc.].
+If you need any assistance or have questions, feel free to open an issue
 
 ## Who maintains and contributes to the project
-This project is maintained and contributed to by [your name or username]. Contributions and feedback are welcome! Please check the contribution guidelines [here](link-to-contributing.md) for more information.
+This project is maintained and contributed to by [@MICHELLENGEI]. Contributions and feedback are welcome! Please check the contribution guidelines [here](link-to-contributing.md) for more information.
