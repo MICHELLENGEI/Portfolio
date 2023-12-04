@@ -1,24 +1,24 @@
-# Portfolio
+# Portfolio Website
 
-## What the project does
-This project is a portfolio showcasing my web development abilities. It highlights my skills and experiences in Jvascript and serves as a comprehensive overview of my work.
+Welcome to my personal portfolio website repository! This repository contains the code and assets for my portfolio website, showcasing my projects, skills, and experiences.
 
-## Why the project is useful
-The portfolio serves as a professional showcase to exhibit my expertise, creativity, and proficiency in Web Developmemnt. It provides potential employers, clients, or collaborators with a clear understanding of my capabilities and accomplishments.
+## About
 
-## UI
-![home](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/fe0cfb95-711c-4de8-ba41-44a5d572a0df)
+This website serves as a digital resume and portfolio, presenting my skills, projects, and contact information. It's designed to give visitors an overview of my work and abilities.
 
-![services](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/bd2bd320-a738-4d1e-9570-365d070c1c4f)
+## Technologies Used
 
-![projects](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/9df48d8b-17e9-4c2e-b080-a88515e0d581)
+- **HTML**: Used for the structure and content of the website.
+- **CSS**: Responsible for the styling and layout of the website.
+- **JavaScript**: Used for interactivity and dynamic elements.
+- **Bootstrap**: Employed for responsive design and layout.
 
-![blog](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/0cfbe789-13ef-4692-ace0-65c65e328d53)
+## Features
 
-![contact](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/f2d51de8-a7e6-477f-8f6f-1c9f595bc271)
-
-![footer](https://github.com/MICHELLENGEI/Portfolio/assets/78398672/b49c799b-f162-4c19-ba03-7f3e80753e02)
-
+- **Projects Showcase**: Displaying my latest and most notable projects.
+- **Skills Section**: Highlighting the skills and technologies I'm proficient in.
+- **About Me**: A brief introduction to who I am and my background.
+- **Contact Information**: Providing various ways to get in touch with me.
 
 
 ## How to get started with the project
@@ -28,7 +28,17 @@ To explore the portfolio:
 3. Open the [index.html](https://github.com/MICHELLENGEI/Portfolio/blob/main/src/index.html) file in your web browser
 4. Browse through the various sections and projects showcased
 
+## Folder Structure
 
+- **css/**: Contains the stylesheets used for the website.
+- **images/**: Stores images and icons used in the portfolio.
+- **js/**: Holds JavaScript files for interactivity (if any).
+- **index.html**: The main HTML file containing the structure of the website.
 
-## Who maintains and contributes to the project
+## Credits
+
+- [Bootstrap](https://getbootstrap.com/) - Used for responsive design.
+- [FontAwesome](https://fontawesome.com/) - Icons used in the website.
+
+## Contact
 This project is maintained and contributed to by [MICHELLENGEI](https://github.com/MICHELLENGEI). Contributions and feedback are welcome! Please check the contribution guidelines [here](link-to-contributing.md) for more information.
