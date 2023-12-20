@@ -401,10 +401,9 @@
 .freelance {
     width: 100%;
     height: 450px;
-    background-image: url('../img/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
     background-size: cover;
     background-position: center;
-
+    background-image: url('../img/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
 }
 
 .freelance h1 {
@@ -452,7 +451,7 @@
 
 .card-section {
     position: relative;
-    top: -75px;
+    bottom: -75px;
     padding: 20px;
     z-index: 1;
 }
